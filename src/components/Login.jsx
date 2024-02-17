@@ -22,6 +22,7 @@ function Login() {
   // Handle form submission
   const onSubmit = async (data) => {
     try {
+      setIsSubmitting(true);
       const response = await axios.post(
         "https://med-lyhk.onrender.com/login",
         data
@@ -82,7 +83,7 @@ function Login() {
             )}
           </div>
           <button disabled={isSubmitting} type="submit">
-            Login
+            {isSubmitting ? "Submitting..." : "Login"}
           </button>
           <Link to="/register">
             <p className="signup">Don't have an account? Signup!</p>
