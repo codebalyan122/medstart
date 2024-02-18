@@ -41,7 +41,7 @@ function Register() {
   };
 
   return (
-    <div className="container">
+    <div className="container2">
       <div className="login-container">
         <h2>Register</h2>
         <form onSubmit={handleSubmit(onSubmit)}>
