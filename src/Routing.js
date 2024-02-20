@@ -9,9 +9,7 @@ import AddMedicine from "./components/AddMedicine";
 const Routing = () => {
   return (
     <Routes>
-      {["/", "/login"].map((path, index) => (
-        <Route path={path} element={<Login />} index={index} key={index} />
-      ))}
+      <Route path={"/"} element={<Login />} />
 
       <Route path="/register" element={<Register />} />
       <Route path="/home" element={<Home />} />
