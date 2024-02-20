@@ -27,7 +27,7 @@ const NavbarComp = () => {
               <Link to="/all-medicines">All medicines</Link>
             </li>
             <li>
-              <Link to="/projects">Projects</Link>
+              <Link to="/add-medicine">Add Medicine</Link>
             </li>
           </ul>
         </div>
